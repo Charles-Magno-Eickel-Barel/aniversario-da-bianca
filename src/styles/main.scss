@@ -11,7 +11,13 @@
 }
 
 body {
-    background-image: url(../images/bianca4.png);
+    background-image: url(../images/telagrandeB.png);
+    background-size: cover;
+    @media (max-width:640px) {
+        background-image: url(../images/biancacelular.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    };
 }
 .container {
     max-width: 960px;
