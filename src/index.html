@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/styles/main.scss">
+    
+</head>
+<body>
+    <div class="hero">
+        <div  class="container">
+            <p id="faltam" class="hero__text">
+                Faltam
+            </p>
+            <ul class="hero__contador">
+                <li class="hero__contador__number">
+                    <span id="dias"></span>
+                </li>
+                <li class="hero__contador__number">
+                    <span id="horas"></span>
+                </li>
+                <li class="hero__contador__number">
+                    <span id="minutos"></span>
+                </li>
+                <li class="hero__contador__number">
+                    <span id="segundos"></span>
+                </li>
+                <li class="hero__contador__text">
+                    dias
+                </li>
+                <li class="hero__contador__text">
+                    horas
+                </li>
+                <li class="hero__contador__text">
+                    minutos
+                </li>
+                <li class="hero__contador__text">
+                    segundos
+                </li>
+            </ul>
+            <p id="tempo" class="hero__text">
+                Para o meu aniversário.
+            </p>
+        </div>
+    </div>
+    <section class="content" id="c">
+        <div class="content__box">
+            <div class="container">
+                <form>
+                    <div class="content__box__field">
+                        <label for="name">Nome do evento:</label>
+                        <textarea id="mensagem" name="mensagem"></textarea>
+                    </div>
+                    <div class="content__box__field">
+                        <label for="date">Data:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div class="content__box__field">
+                        <a href="#" class="button button--primary">
+                            Atualizar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>  
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>

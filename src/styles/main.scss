@@ -1,0 +1,32 @@
+@use 'hero';
+@use 'componentes/buttons';
+@use 'content';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+    list-style: none;
+}
+
+body {
+    background-image: url(../images/bianca.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center; 
+
+    @media (max-width:640px) {
+        max-width: 80%;
+    };
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    };
+}
